@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp Page</title>
+    <link rel="stylesheet" href="mainPageStyle.css">
+</head>
+
+<body>
+
+    <div class="hero" id="change">
+        <nav>
+            <img src="webPageImages/images/menu.png" alt="" class="menu-img">
+            <img src="webPageImages/images/logo.png" alt="" class="logo-img">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="webPageImages/images/lamp.png" alt="lamp" class="lamp">
+            <img src="webPageImages/images/light.png" alt="lamp" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>Bright future</h1>
+                <p id="changeParagraph">ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti ullam aut autem! Ut
+                    sapiente,
+                    neque sit, similique reprehenderit ratione mahendra sahu  animi maxime obcaecati aspernatur incidunt odio
+                    praesentium
+                    debitis doloremque labore?
+                </p>
+            <a href="#">Check all Collectionn</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        var change = document.getElementById("change");
+        var changeParagraph = document.getElementById("changeParagraph");
+
+
+        function toggleBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+            change.classList.toggle("changebck");
+            changeParagraph.classList.toggle("changePara");
+        }
+    </script>
+
+</body>
+
+</html>
